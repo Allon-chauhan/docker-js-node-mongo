@@ -64,7 +64,7 @@
    🔗 **Reference:** [MongoExpress Docker Hub](https://hub.docker.com/_/mongo-express)
 
    | Name                            | Default  | Description        |
-         |---------------------------------|----------|--------------------|
+      |---------------------------------|----------|--------------------|
    | ME_CONFIG_MONGODB_AUTH_DATABASE | 'db'     | Database name      |
    | ME_CONFIG_MONGODB_AUTH_USERNAME | 'admin'  | Database username  |
    | ME_CONFIG_MONGODB_AUTH_PASSWORD | 'pass'   | Database password  |
