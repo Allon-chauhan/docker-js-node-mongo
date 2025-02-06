@@ -16,19 +16,19 @@
    ```bash
    docker pull mongo
    ```
-   Reference: [Docker Hub](https://hub.docker.com/_/mongo)
+   🔗 **Reference:** [Docker Hub](https://hub.docker.com/_/mongo)
 3. Download the MongoExpress Docker image by entering the following command:
    ```bash
    docker pull mongo-express
    ```
-   Reference: [Docker Hub](https://hub.docker.com/_/mongo-express)
+   🔗 **Reference:** [Docker Hub](https://hub.docker.com/_/mongo-express)
 
 ### 🌐 Creating a Docker Network for Internal Container Communication
 1. Use this command to create a Docker network:
    ```bash
    docker network create mongo-network
    ```
-   *(We will use this when creating Docker containers)*
+   ⚠️ **IMPORTANT:** 🚨 We will use this when creating Docker containers.🚨
 
 ### 🚀 Running and Configuring Containers to Run the Images
 
@@ -53,7 +53,7 @@
      --name mongo-express \
      mongo-express:latest
    ```
-   *(The server.js file is already configured with the above username and password to connect to MongoDB)*
+   ⚠️ **IMPORTANT:** 🚨 The `server.js` file is already configured with the above username and password to connect to MongoDB.🚨
 
 ### 🔧 Accessing and Configuring MongoExpress
 1. Open your browser and navigate to:
@@ -61,10 +61,10 @@
    http://localhost:8081
    ```
 2. **Credentials:**
-   Reference: [MongoExpress Docker Hub](https://hub.docker.com/_/mongo-express)
+   🔗 **Reference:** [MongoExpress Docker Hub](https://hub.docker.com/_/mongo-express)
 
    | Name                            | Default  | Description        |
-      |---------------------------------|----------|--------------------|
+         |---------------------------------|----------|--------------------|
    | ME_CONFIG_MONGODB_AUTH_DATABASE | 'db'     | Database name      |
    | ME_CONFIG_MONGODB_AUTH_USERNAME | 'admin'  | Database username  |
    | ME_CONFIG_MONGODB_AUTH_PASSWORD | 'pass'   | Database password  |
@@ -72,7 +72,7 @@
 3. Create a new database named `user-account`.
 4. Create a new collection named `users` within the `user-account` database.
 
-*Note: These specific database and collection names are provided in the `server.js` file. If changed, make sure to update them in the file as well!*
+⚠️ **IMPORTANT:** 🚨 These specific database and collection names are provided in the `server.js` file. If you change them, **ensure you update them in the file as well!** 🚨
 
 ### 🟢 Starting the Node.js Server
 1. On your local computer, ensure you're in the app directory. Use the command below to confirm:
